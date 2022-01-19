@@ -8,8 +8,8 @@ const Home = () => {
     const classes = useStyles();
     return(
         <section className="page">
-            <Grid container justifyContent="center" direction="row" alignItems="center">
-                <Grid container xs={12} sm={8} direction='column'>
+            <Grid container justifyContent="space-between" direction="row" alignItems="center">
+                <Grid item>
                     <Typography variant='h3'>
                         Welcome to <span className={classes.span}>Costs</span>.
                     </Typography>

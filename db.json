@@ -1,21 +1,57 @@
 {
-    "projects": [] ,
-    "categories": [
-        {
-            "id": 1,
-            "name": "Infra"
-        },
-        {
-            "id": 2,
-            "name": "Development"
-        },
-        {
-            "id": 3,
-            "name": "Design"
-        },
-        {
-            "id": 4,
-            "name": "Planning"
-        }
-    ]
+  "projects": [
+    {
+      "ProjectName": "Project name",
+      "ProjectBudget": "USD$ 5,000,00",
+      "ProjectCategory": 2,
+      "ProjectDeadline": "2022-02-20T10:01",
+      "id": 1
+    },
+    {
+      "ProjectName": "Project 2",
+      "ProjectBudget": "USD$ 5000",
+      "ProjectCategory": 1,
+      "ProjectDeadline": "2022-04-20T10:01",
+      "id": 2
+    },
+    {
+      "ProjectName": "State test",
+      "ProjectBudget": "USD$ 432",
+      "ProjectCategory": 1,
+      "ProjectDeadline": "2022-12-20T20:12",
+      "id": 3
+    },
+    {
+      "ProjectName": "projeto teste",
+      "ProjectBudget": "USD$ 2312",
+      "ProjectCategory": 3,
+      "ProjectDeadline": "2022-12-23T10:05",
+      "id": 4
+    },
+    {
+      "ProjectName": "asdff",
+      "ProjectBudget": "USD$ 4,2342",
+      "ProjectCategory": 1,
+      "ProjectDeadline": "2020-12-12T12:12",
+      "id": 5
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Development"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planning"
+    }
+  ]
 }

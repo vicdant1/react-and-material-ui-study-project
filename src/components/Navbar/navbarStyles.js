@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     navbar:{
         position: 'sticky',
         top: 0,
-        backgroundColor: '#212121'
+        backgroundColor: theme.palette.dark.main
     },
     list: {
         width: 250,

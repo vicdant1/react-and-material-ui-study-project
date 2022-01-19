@@ -1,6 +1,6 @@
 import { CssBaseline, ThemeProvider, createTheme } from "@material-ui/core";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { orange, amber } from "@material-ui/core/colors";
+import { orange, amber, green, red, grey } from "@material-ui/core/colors";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
@@ -22,6 +22,22 @@ function App() {
         main: orange[500],
         light: orange[300],
       },
+      alertSuccess: { 
+        main: green[500], 
+        light: green[300]
+      },
+      alertFail: { 
+        light: red[700],
+        main: red[500]
+      },
+      dark: {
+        main: '#212121',
+        light: '#363636'
+      },
+      card: {
+        main: grey[200],
+        light: grey[100]
+      }
     },
     spacing: 8,
   });
