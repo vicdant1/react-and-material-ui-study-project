@@ -5,7 +5,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.card.light,
     '&:hover': {
       backgroundColor: theme.palette.card.main,
-    }
+    },
+    minHeight: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between"
   }
 }));
 

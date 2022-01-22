@@ -1,39 +1,53 @@
 {
   "projects": [
     {
-      "ProjectName": "Project name",
-      "ProjectBudget": "USD$ 5,000,00",
-      "ProjectCategory": 2,
-      "ProjectDeadline": "2022-02-20T10:01",
+      "ProjectName": "asdfasdf",
+      "ProjectBudget": "USD$ 4343",
+      "ProjectCategory": "Development",
+      "ProjectDeadline": "2020-02-20",
       "id": 1
     },
     {
-      "ProjectName": "Project 2",
-      "ProjectBudget": "USD$ 5000",
-      "ProjectCategory": 1,
-      "ProjectDeadline": "2022-04-20T10:01",
+      "ProjectName": "aasdf",
+      "ProjectBudget": "USD$ 34",
+      "ProjectCategory": "Development",
+      "ProjectDeadline": "2022-12-12",
       "id": 2
     },
     {
-      "ProjectName": "State test",
-      "ProjectBudget": "USD$ 432",
-      "ProjectCategory": 1,
-      "ProjectDeadline": "2022-12-20T20:12",
+      "ProjectName": "asdf",
+      "ProjectBudget": "USD$ 34",
+      "ProjectCategory": "Design",
+      "ProjectDeadline": "2012-12-12",
       "id": 3
     },
     {
-      "ProjectName": "projeto teste",
-      "ProjectBudget": "USD$ 2312",
-      "ProjectCategory": 3,
-      "ProjectDeadline": "2022-12-23T10:05",
+      "ProjectName": "asdfasdfas",
+      "ProjectBudget": "USD$ 225",
+      "ProjectCategory": "Planning",
+      "ProjectDeadline": "2012-12-12",
       "id": 4
     },
     {
-      "ProjectName": "asdff",
-      "ProjectBudget": "USD$ 4,2342",
-      "ProjectCategory": 1,
-      "ProjectDeadline": "2020-12-12T12:12",
+      "ProjectName": "asdfa",
+      "ProjectBudget": "USD$ 123",
+      "ProjectCategory": "Infra",
+      "ProjectDeadline": "1212-12-12",
       "id": 5
+    },
+    {
+      "ProjectName": "ablubleeditadop",
+      "ProjectBudget": "USD$ 123,1231",
+      "ProjectCategory": "Development",
+      "ProjectDeadline": "2012-12-12",
+      "id": 6
+    },
+    {
+      "ProjectDeadline": "2012-12-12",
+      "ProjectName": "asdfasd",
+      "ProjectBudget": "USD$ 12,3123",
+      "ProjectCategory": "Development",
+      "id": 7
     }
   ],
   "categories": [

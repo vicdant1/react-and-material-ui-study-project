@@ -14,16 +14,16 @@ import {
   MenuItem,
 } from "@material-ui/core";
 
-const ProjectForm = ({ submitData }) => {
+const ProjectForm = ({ submitData, projectData }) => {
   const classes = useStyles();
   const [budgetValue, setBudgetValue] = useState("");
   const [category, setCategory] = useState(0);
   const [selectData, setSelectData] = useState([]);
-  const [project, setProject] = useState({});
+  const [project, setProject] = useState(projectData || {});
 
   useEffect(async () => {
     await axios
-      .get("http://localhost:5000/categories")
+      .get("http://localhost:5000/categories")  
       .then((res) => setSelectData(res.data));
   }, []);
 
@@ -59,10 +59,11 @@ const ProjectForm = ({ submitData }) => {
             maxRows={4}
             onChange={(e) => handleChange(e)}
             fullWidth
+            value={project.ProjectName}
             required
           />
           <NumberFormat
-            value={budgetValue}
+            value={budgetValue || project.ProjectBudget}
             className="foo"
             displayType={"text"}
             thousandSeparator={true}
@@ -95,7 +96,7 @@ const ProjectForm = ({ submitData }) => {
               <FormControl required fullWidth>
                 <InputLabel htmlFor="ProjectCategory">Category</InputLabel>
                 <Select
-                  value={category}
+                  value={project.ProjectCategory || category}
                   inputProps={{
                     name: "ProjectCategory",
                     id: "1",
@@ -110,7 +111,7 @@ const ProjectForm = ({ submitData }) => {
                   </MenuItem>
                   {selectData.map((option, i) => {
                     return (
-                      <MenuItem key={i} value={option.id}>
+                      <MenuItem key={i} value={option.name}>
                         {option.name}
                       </MenuItem>
                     );
@@ -123,8 +124,9 @@ const ProjectForm = ({ submitData }) => {
                 fullWidth
                 id="datetime-local"
                 label="Deadline"
-                type="datetime-local"
+                type="date"
                 name="ProjectDeadline"
+                value={project.ProjectDeadline || ''}
                 required
                 onChange={(e) => handleChange(e)}
                 className={classes.textField}

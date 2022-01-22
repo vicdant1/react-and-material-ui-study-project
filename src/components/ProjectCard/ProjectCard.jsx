@@ -6,10 +6,18 @@ import {
   Typography,
   Box,
 } from "@material-ui/core";
-import { Delete as DeleteIcon, Create as CreateIcon } from '@material-ui/icons';
-import useStyles from './projectCardStyles'
+import { Delete as DeleteIcon, Create as CreateIcon } from "@material-ui/icons";
+import { Link } from "react-router-dom";
+import useStyles from "./projectCardStyles";
 
-const ProjectCard = ({name, deadline, budget, category }) => {
+const ProjectCard = ({
+  name,
+  deadline,
+  budget,
+  category,
+  projectId,
+  handleDeleteProject,
+}) => {
   const bull = (
     <Box
       component="span"
@@ -22,21 +30,31 @@ const ProjectCard = ({name, deadline, budget, category }) => {
   const classes = useStyles();
 
   return (
-    <Card classes={{root: classes.card}} className="t-4">
+    <Card classes={{ root: classes.card }} className="t-4">
       <CardContent>
         <Typography variant="h5" component="div">
           {name}
         </Typography>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          {deadline} {bull} {category}
+        <Typography sx={{ fontSize: 14 }} gutterBottom>
+          {category} {bull} {deadline}
         </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        <Typography sx={{ mb: 1.5 }}>
           {budget}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button startIcon={<DeleteIcon/>} size="small">Delete</Button>
-        <Button startIcon={<CreateIcon/>} size="small">Edit</Button>
+        <Button
+          startIcon={<DeleteIcon />}
+          size="small"
+          onClick={() => handleDeleteProject(projectId)}
+        >
+          Delete
+        </Button>
+        <Link to={`/project/${projectId}`}>
+          <Button startIcon={<CreateIcon />} size="small">
+            Edit
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );

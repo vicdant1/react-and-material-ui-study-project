@@ -9,6 +9,7 @@ import Contact from "./pages/Contact/Contact";
 import Projects from "./pages/Projects/Projects";
 import NewProject from "./pages/NewProject/NewProject";
 import Support from "./pages/Support/Support";
+import Project from "./pages/Project/Project";
 
 function App() {
   const theme = createTheme({
@@ -54,6 +55,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="newproject" element={<NewProject />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/project/:id" element={<Project />} />
         </Routes>
         <Footer />
       </ThemeProvider>

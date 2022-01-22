@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+::selection{
+  background-color: #ff9800;
+}
+
 a{
   text-decoration: none;
   color: inherit;

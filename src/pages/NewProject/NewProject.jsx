@@ -13,11 +13,11 @@ const NewProject = () => {
       .post("http://localhost:5000/projects", project)
       .then((res) => {
         console.log(res);
-        navigate("/projects", { state: true });
+        navigate("/projects", { state: "created" });
       })
       .catch((err) => {
         console.log(err);
-        navigate("/projects", { state: false });
+        navigate("/projects", { state: "not_created" });
       });
   };
 
