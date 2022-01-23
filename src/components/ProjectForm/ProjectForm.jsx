@@ -43,7 +43,7 @@ const ProjectForm = ({ submitData, projectData }) => {
       alignItems="center"
       justifyContent="center"
     >
-      <Grid className={classes.mainForm} item xs={6}>
+      <Grid className={classes.mainForm} item xs={12} sm={6}>
         <form
           id="projectCreateForm"
           className={classes.form}
@@ -89,10 +89,10 @@ const ProjectForm = ({ submitData, projectData }) => {
           <Box
             style={{ gap: "10px" }}
             display="flex"
-            alignItems="center"
             justifyContent="space-between"
+            className={classes.nestedElementsBox}
           >
-            <Grid item xs={6}>
+            <Grid item xs={12} sm={6}>
               <FormControl required fullWidth>
                 <InputLabel htmlFor="ProjectCategory">Category</InputLabel>
                 <Select
@@ -119,7 +119,7 @@ const ProjectForm = ({ submitData, projectData }) => {
                 </Select>
               </FormControl>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} sm={6}>
               <TextField
                 fullWidth
                 id="datetime-local"
