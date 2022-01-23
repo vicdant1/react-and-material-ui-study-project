@@ -45,40 +45,7 @@ const Support = () => {
 
     return(
         <div className="page">
-            <form id="main-form" onSubmit={handleSubmit}>
-                <input type="text" onChange={handleInputChange} value={formValues.email || ''} name="email" id="email" placeholder="email" />
-                <input type="text" onChange={handleInputChange} value={formValues.name || ''} name="name" id="name"  placeholder="name"/>
-                <br />
-                <select name="language" value={formValues.language} onChange={handleInputChange}>
-                    <option>Select a language</option>
-                    <option value="php">php</option>
-                    <option value="javascript">javascript</option>
-                    <option value="delphi">delphi</option>
-                </select>
-                <br />
-
-                <label><input onChange={handleInputChange} checked={formValues.dev == 1} type="radio" name="dev" id="dev" value={1} />Yes</label>
-                <label><input onChange={handleInputChange} checked={formValues.dev == 0} type="radio" name="dev" id="dev2" value={0} /> No</label>
-                <br />
-
-                <textarea name="bio" id="bio" cols="30" rows="10" onChange={handleInputChange} value={formValues.bio || ''}></textarea>
-                <br/>
-
-                <label>
-                    <input type="checkbox" name="social" value="twitter" onChange={handleInputChange}/>
-                    Twitter
-                </label>
-                <label>
-                    <input type="checkbox" name="social" value="facebook" onChange={handleInputChange}/>
-                    Facebook
-                </label>
-                <label>
-                    <input type="checkbox" name="social" value="instagram" onChange={handleInputChange}/>
-                    Instagram
-                </label>
-                <br/>
-                <input type="submit" value="submit" />
-            </form>
+            Support
         </div>
     )
 }
