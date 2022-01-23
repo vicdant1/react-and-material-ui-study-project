@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { IconButton, Box, Typography } from "@material-ui/core";
+import { IconButton, Box, Typography, Tooltip } from "@material-ui/core";
 import { Edit, Close } from "@material-ui/icons";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -54,14 +54,14 @@ const Project = () => {
           </Box>
 
           {!openEdit ? (
-            <Box mt={2}>
+            <Box mt={2} fontSize={20}>
               <b>Budget:</b> {projectData.ProjectBudget}
               <br />
               <b>Category:</b> {projectData.ProjectCategory}
               <br />
               <b>Deadline:</b> {projectData.ProjectDeadline}
               <br />
-              <b>Cost:</b> USD$ {projectData.ProjectCost || 0}
+              <Tooltip title="Coming soon" arrow><b>Cost:</b></Tooltip> USD$ {projectData.ProjectCost || 0} (Coming soon)
               <br />
             </Box>
           ) : (
