@@ -47,7 +47,7 @@ const Projects = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Typography variant="h3">My projects</Typography>
+        <Typography variant="h3" align="center">My projects</Typography>
         <Link to="/newproject" className="addButtonLink">
           <Button
             startIcon={<AddCircleIcon />}
