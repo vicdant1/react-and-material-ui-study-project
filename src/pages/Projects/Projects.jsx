@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { useLocation, Link } from "react-router-dom";
 import { Snackbar, Typography, Box, Button, Grid } from "@material-ui/core";
@@ -9,8 +9,8 @@ import Loading from "../../components/Loading/Loading";
 
 const Projects = () => {
   const location = useLocation();
-  const success = location.state == "created";
-  const edited = location.state == "edited";
+  const success = location.state === "created";
+  const edited = location.state === "edited";
   const [open, setOpen] = useState(success || edited);
   const [projects, setProjects] = useState([]);
   const [stopLoading, setStopLoading] = useState(false);
@@ -78,7 +78,7 @@ const Projects = () => {
         </Grid>
       </Box>
       {!stopLoading && <Loading />}
-      {stopLoading && projects.length == 0 && (
+      {stopLoading && projects.length === 0 && (
         <Typography variant="h5">No projects yet :(</Typography>
       )}
 

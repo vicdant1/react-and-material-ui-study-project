@@ -4,7 +4,7 @@ import savings from '../../img/savings.svg';
 import { Box, Button, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom'
 
-import LinkButton from '../../components/LinkButton/LinkButton';
+// import LinkButton from '../../components/LinkButton/LinkButton';
 
 const Home = () => { 
     const classes = useStyles();
