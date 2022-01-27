@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
     bottom: 16,
     right: 16,
   },
+  descText: {
+    padding: "1rem 0"
+  }
 }));
 
 export default useStyles;
