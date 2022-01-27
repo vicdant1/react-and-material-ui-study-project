@@ -1,4 +1,4 @@
-import { Grid, Typography, Fab, Box, Button } from "@material-ui/core";
+import { Grid, Typography, Fab, Box } from "@material-ui/core";
 import { WhatsApp } from "@material-ui/icons/";
 import useStyles from "../Company/companyStyles";
 import analytics from '../../img/analytics_media.svg'
