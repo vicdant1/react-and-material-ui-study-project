@@ -83,7 +83,7 @@ const Company = () => {
         </Grid>
       </Grid>
       <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
-        <Fab className={classes.fabButton} color="secondary" aria-label="add">
+        <Fab className={`${classes.fabButton} shake`} color="secondary" aria-label="add">
           <WhatsApp />
         </Fab>
       </a>
