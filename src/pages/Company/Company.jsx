@@ -1,6 +1,7 @@
 import { Grid, Typography, Fab, Box } from "@material-ui/core";
 import { WhatsApp } from "@material-ui/icons/";
 import useStyles from "../Company/companyStyles";
+import analytics from '../../img/analytics_media.svg'
 
 const Company = () => {
   const classes = useStyles();
@@ -38,27 +39,28 @@ const Company = () => {
           </Box>
           <hr />
           <Box className={classes.descText}>
-            <Typography variant="h5" align="right">... Everything changed.</Typography>
-            <Typography variant="body1" align="justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              hic quaerat ipsum accusantium corrupti vero aliquam aut, eum
-              eligendi cupiditate necessitatibus voluptatibus vel repudiandae
-              dolores, ab voluptate repellendus saepe minima. Provident amet sit
-              corrupti id cum consectetur nobis, ut, quam rerum dolorum suscipit
-              nesciunt ipsam laudantium odio iste ea totam accusamus consequatur
-              dolorem eveniet sapiente, assumenda ex natus. Suscipit, dolor?
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              animi reprehenderit modi perspiciatis omnis nam quidem sequi non
-              iure, itaque in, voluptas voluptatum optio eligendi culpa. Ut nemo
-              saepe blanditiis? Reiciendis doloribus possimus alias assumenda,
-              quasi quidem in repellat provident quam quod porro, magnam
-              molestiae numquam consequuntur. Ducimus velit id rem quo
-              voluptatibus maiores porro nemo. Quidem perspiciatis veritatis
-              totam! Incidunt odio, commodi, assumenda veniam id vel sed
-              molestias eum magnam reiciendis iure quidem. Veritatis cupiditate
-              sint explicabo aut, quia inventore distinctio at laborum quis,
-              modi illo animi, ad deserunt.
+            <Typography variant="h5" align="right">
+              ... Everything changed.
             </Typography>
+            <Box>
+              <Grid container spacing={2}>
+                <Grid item xs={12} sm={6}>
+                  <img className={classes.textSvg} src={analytics} alt="analytics"/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <Typography variant="body1" align="justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam hic quaerat ipsum accusantium corrupti vero aliquam
+                    aut, eum eligendi cupiditate necessitatibus voluptatibus vel
+                    repudiandae dolores, ab voluptate repellendus saepe minima.
+                    Provident amet sit corrupti id cum consectetur nobis, ut,
+                    quam rerum dolorum suscipit nesciunt ipsam laudantium odio
+                    iste ea totam accusamus consequatur dolorem eveniet
+                    sapiente, assumenda ex natus. Suscipit, dolor?
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Box>
           </Box>
           <hr />
           <Box className={classes.descText}>

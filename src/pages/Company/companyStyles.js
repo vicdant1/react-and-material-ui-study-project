@@ -18,6 +18,10 @@ const useStyles = makeStyles((theme) => ({
   },
   descText: {
     padding: "1rem 0"
+  },
+  textSvg: {
+    display: "block",
+    width: "100%"
   }
 }));
 
