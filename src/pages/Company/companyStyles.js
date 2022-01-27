@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
   },
   textSvg: {
     display: "block",
-    width: "100%"
+    width: "100%",
+    maxHeight: 245
   }
 }));
 
