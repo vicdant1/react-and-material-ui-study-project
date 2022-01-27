@@ -23,6 +23,10 @@ const useStyles = makeStyles((theme) => ({
     display: "block",
     width: "100%",
     maxHeight: 245
+  },
+  genericSvg: {
+    display: "block",
+    width: "100%",
   }
 }));
 

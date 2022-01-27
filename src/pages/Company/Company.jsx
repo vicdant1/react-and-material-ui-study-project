@@ -2,6 +2,7 @@ import { Grid, Typography, Fab, Box, Button } from "@material-ui/core";
 import { WhatsApp } from "@material-ui/icons/";
 import useStyles from "../Company/companyStyles";
 import analytics from '../../img/analytics_media.svg'
+import happy2022 from '../../img/happy_2022.svg'
 
 const Company = () => {
   const classes = useStyles();
@@ -95,8 +96,19 @@ const Company = () => {
             loading="lazy"
           ></iframe>
         </Grid>
-        <Grid item xs={false} sm={2}>
-          navigation
+        <Grid item sm={2}>
+          <Box display="flex" alignItems="center" justifyContent="center" sx={{display: {xs: "none", sm: "block"}}}>
+            <Typography variant="h5" align="center">
+              Coming soon... <br/>
+              Happy 2022!
+            </Typography>
+            <img className={classes.genericSvg} src={happy2022} alt="happy new year (2022)"/>
+            <img className={classes.genericSvg} src={happy2022} alt="happy new year (2022)"/>
+            <img className={classes.genericSvg} src={happy2022} alt="happy new year (2022)"/>
+            <img className={classes.genericSvg} src={happy2022} alt="happy new year (2022)"/>
+            <img className={classes.genericSvg} src={happy2022} alt="happy new year (2022)"/>
+            <img className={classes.genericSvg} src={happy2022} alt="happy new year (2022)"/>
+          </Box>
         </Grid>
       </Grid>
       <a href="https://youtu.be/dQw4w9WgXcQ" rel="noreferrer" target="_blank">
