@@ -27,7 +27,7 @@ The future have good news to this project, this are some of the things I want to
 
  - Dark mode 🌒
  - Search mechanism 🔍
- - It's own API ⚙️
+ - It's own API (with .NET) ⚙️
  - Email service 📧
 
 # Tools I used 
